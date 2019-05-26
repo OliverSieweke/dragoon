@@ -1,0 +1,37 @@
+{
+    "name": "dragoon",
+    "version": "1.0.0",
+    "description": "Powerpoint Subtitle Constructor",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "fix": "node_modules/.bin/eslint --fix src",
+        "docs:lint": "node_modules/.bin/documentation lint src",
+        "docs:build": "node_modules/.bin/documentation build src -f html -o docs -c documentation.yml --favicon assets/favicon.png",
+        "docs:serve": "node_modules/.bin/documentation serve --watch src -f html -c documentation.yml"
+    },
+    "keywords": [
+        "theater",
+        "subtitles",
+        "powerpoint"
+    ],
+    "author": {
+        "name": "Oliver Sieweke",
+        "email": "oliver@sieweke.com",
+        "url": "https://www.oliversieweke.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OliverSieweke/dragoon.git"
+    },
+    "license": "GPL-3.0",
+    "engines": {
+        "node": ">=10.15.3",
+        "npm": ">=6.9.0"
+    },
+    "devDependencies": {
+        "documentation": "^11.0.0",
+        "eslint": "^5.16.0",
+        "eslint-plugin-jsdoc": "^7.0.2"
+    }
+}

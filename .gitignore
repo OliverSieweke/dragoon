@@ -1,0 +1,6 @@
+node_modules/
+
+# User specific Webstorm settings:
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
