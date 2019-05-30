@@ -1,0 +1,68 @@
+{Surtitres… Hier wird übertitelt...}
+{Qui verranno mostrati i sovratitoli...}
+
+
+{}
+{}
+
+
+Carl. Il y a quelques mois...
+{Vor ein paar Monaten....}
+{Qualche mese fa…}
+
+
+
+
+Ils sortent tous. Sie treten alle ab. Escono tutti.
+Mouvement  – Lecture à Berlin
+Romain entre, il porte un sac à dos très lourd et il semble chercher son chemin depuis déjà quelques heures.
+Romain tritt ein. Er trägt einen sehr schweren Rucksack. Anscheinend sucht er den Weg seit Stunden.
+Romain entra, porta uno zaino molto pesante e sembra che stia cercando la strada già da qualche ora.
+
+
+Romain. Au public. Excusez-moi, l'institut français, c'est ici ? On lui fait sans doute signe que oui. J'ai plus de batterie, heureusement j'avais une carte. J'ai rendez-vous ici, je viens de débarquer à Berlin, je dois monter une lecture. Une lecture théâtralisée. Un temps. C'est mon idée. Je suis historien, un jeune historien, enchanté. Romain Comandi... Bonjour. Un temps. C'est dans six mois, la commémoration, le centenaire. 98-08. Et « Dix-huit », c'est le nom que j'ai choisi de donner à l'événement. Un temps. Passionnant. Je n'ai pas l'intention d'exposer in extenso quatre années de conflits mais au contraire - telle une anthologie commune - de faire dialoguer différents témoins, délivrer quelques aperçus, à la première personne… des instantanés si vous voulez. Dans l'horreur des tranchées en compagnie de Louis Barthas, Maurice Genevoix, aux côtés de la militante féministe Hélène Brion. Une anthologie non exhaustive à laquelle s’ajoutera le recueil “Paroles de poilus, lettres et carnets du front” et des textes allemands, comme « A l'ouest rien de nouveau ». Un temps. Je suis très excité.
+Zum Publikum. {Entschuldigen Sie, ist hier das Französische Institut?  Mein Akku ist leer, aber zum Glück hatte ich eine Karte dabei. Ich habe einen Termin hier, bin gerade in Berlin angekommen. Ich soll eine Lesung halten, eine szenische Lesung. Das war meine Idee. Ich bin Historiker, junger Historiker, gestatten, Romain Comandi... Hallo. In sechs Monaten findet die Gedenkfeier zum hundertsten Jahrestag statt. 98-08. „8“ ist der Titel, den ich der Feier gegeben habe. Faszinierend. Ich habe nicht vor, vier Jahre Krieg in voller Länge auszubreiten, sondern vielmehr – wie in einer gemeinsamen Anthologie - verschiedene Zeitzeugen ins Gespräch kommen zu lassen und subjektive Eindrücke darzustellen. Unterschiedliche Momentaufnahmen, wenn Sie so wollen. Das Grauen der Schützengräben abbilden neben Louis Barthas, Maurice Genevoix und der feministischen Aktivistin Hélène Brion. Eine bruchstückhafte Anthologie, zu der die Sammlung „Sprüche französischer Frontsoldaten im . Weltkrieg, Briefe von der Front“ und deutsche Texte, wie „Im Westen nichts Neues“, hinzukommen. Ich bin sehr aufgeregt.}
+Al pubblico. {Scusate, è qui l’Institut Français? Ho la batteria scarica, fortuna che avevo una mappa. Ho appuntamento qui, sono appena arrivato a Berlino, devo preparare una lettura. Una lettura teatralizzata. È una mia idea. Sono uno storico, un giovane storico, piacere. Romain Comandi… Buongiorno. È fra sei mesi, la commemorazione, il centenario. 98-08. E “Dix-huit” è il nome che ho scelto di dare all’evento. Appassionante. Non ho intenzione di esporre in extenso quattro anni di conflitto, ma al contrario (così come in una comune antologia) di far dialogare diversi testimoni, fornire una panoramica, in prima persona… delle istantanee, se volete. Nell’orrore delle trincee in compagnia di Louis Barthas, Maurice Genevoix, al fianco della militante femminista Hélène Brion. Un’antologia non esaustiva alla quale si aggiungerà la raccolta “Parole di Poilus, lettere e diari dal fronte” e dei testi tedeschi, come “Niente di nuovo sul fronte occidentale”. Sono molto emozionato.}
+
+
+Son téléphone sonne.
+
+
+Romain. Agacé. Un message ! Ah oui mais là c’est embêtant, j'ai plus de batterie.
+
+
+Il lit.
+« Cher Romain,
+
+
+J'espère que vous êtes bien arrivé à Berlin. Je suis terriblement confuse, je n'arriverai pas à temps à l'institut pour notre rendez-vous, je suis retenue dans les transports suite à une intervention de police, des jeunes se sont enchaînés aux voies, ils protestent contre le ministre de l'intérieur. Un temps. Bref, en attendant, je regrette de vous annoncer que nous ne pourrons pas vous accueillir systématiquement dans nos locaux pour les créneaux de répétition que vous m'avez indiqué. Avez-vous pensé à d'autres lieux ? Enfin, je peux toutefois vous annoncer une bonne nouvelle : nous avons trouvé quelqu'un - comme vous le souhaitiez - pour créer une bande son authentique destinée à être diffusée pendant vos lectures. Il s'appelle Carl, il est vraiment a-do-rable... »
+Bon, ça je demande à voir...
+« Je lui avais communiqué notre rendez-vous. Il doit déjà être là. Il est très grand, vous ne pouvez pas le rater. Bien à vous, Caroline. »
+
+
+{Ah, eine Nachricht! Das ist jetzt aber unpassend, mein Akku ist leer.
+„Lieber Romain,
+ich hoffe, dass Sie gut in Berlin angekommen sind. Es ist mir sehr unangenehm, aber ich werde es nicht schaffen, rechtzeitig zu unserem Termin im Institut zu erscheinen. Ich stecke wegen eines Polizeieinsatzes in der Bahn fest. Irgendwelche Jugendliche haben sich an die Gleise gekettet, um gegen den Innenminister zu demonstrieren.
+Ich habe allerdings auch eine gute Nachricht: Wir haben – so wie Sie wollten - jemanden gefunden, der Tonaufnahmen macht, die dann während Ihrer Lesung abgespielt werden können. Er heißt Carl und er ist wirklich sehr nett... Ich habe Ihm von unserem Termin erzählt. Er müsste schon da sein. Er ist ziemlich groß, Sie können Ihn also gar nicht übersehen. Herzliche Grüße, Caroline.“}
+
+
+Infastidito.
+Legge.
+{Un messaggio! Ma che seccatura, ho la batteria scarica.
+“Caro Romain,
+spero che sia ben arrivato a Berlino. Sono terribilmente confusa, non arriverò in tempo all’Institut per il nostro appuntamento, sono bloccata sui mezzi pubblici a causa di un intervento della polizia, dei giovani si sono incatenati ai binari, protestano contro il ministro dell’interno. Comunque posso comunicarle una buona notizia: abbiamo trovato qualcuno (come desiderava) per creare un insieme di effetti audio autentici destinati a essere trasmessi durante le vostre letture. Si chiama Carl, è davvero a-do-rabile…”
+Beh, questo è da vedere…
+“Gli avevo detto del nostro appuntamento. Sarà già arrivato. È molto alto, non può non vederlo. Cordialmente, Caroline.”}
+
+
+Carl apparaît.
+
+
+Carl. Romain ?
+{Romain?}
+{Romain?}
+
+
+Romain. Carl ?
+{Carl?}
+{Carl?}

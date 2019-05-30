@@ -27,9 +27,19 @@
               
                 
                 <li><a
-                  href='#section-xxx'
+                  href='#converters'
                   class="h5 bold black caps">
-                  Section XXX
+                  Converters
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#convertstructuredtexttopowerpoint'
+                  class="">
+                  convertStructuredTextToPowerpoint
                   
                 </a>
                 
@@ -48,16 +58,101 @@
             <div class='keyline-top-not py2'>
   <section class='py2 clearfix'>
 
-    <h2 id='section-xxx' class='mt0'>
-      Section XXX
+    <h2 id='converters' class='mt0'>
+      Converters
     </h2>
 
     
-      <p>This section contains the documentation for XXX.</p>
+      <p>This section contains the converters between the different file types:</p>
+<p>Annotated Text --> Structure Text --> Powerpoint --> PDF</p>
 
     
   </section>
 </div>
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='convertstructuredtexttopowerpoint'>
+      convertStructuredTextToPowerpoint
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts a structured text file into a powerpoint file (one slide separator marks a new slide, two slide separators mark an empty slide).</p>
+
+    <div class='pre p1 fill-light mt0'>convertStructuredTextToPowerpoint(relativePath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>relativePath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Relative path to the structured text file (taking /documents/structured-texts as the root)
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    Options object containing option fields as accepted by the PptxGenJs defineSlideMaster() and addText() methods
+• 
+<a href="https://gitbrent.github.io/PptxGenJS/docs/masters.html">https://gitbrent.github.io/PptxGenJS/docs/masters.html</a>
+
+• 
+<a href="https://gitbrent.github.io/PptxGenJS/docs/api-text.html">https://gitbrent.github.io/PptxGenJS/docs/api-text.html</a>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        The generated powerpoint is automatically saved to the documents/powerpoints directory.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
           
         
       </div>

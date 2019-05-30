@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../basic-node/temp" />
       <excludeFolder url="file://$MODULE_DIR$/../basic-node/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/docs" />
+      <excludeFolder url="file://$MODULE_DIR$/src/documents" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

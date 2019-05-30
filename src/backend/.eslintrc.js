@@ -509,7 +509,7 @@ module.exports = {
         "prefer-const": [                                                       // airbnb
             "warn",
             {
-                destructuring: "any",
+                destructuring: "all",
                 ignoreReadBeforeAssign: false,
             },
         ],
@@ -664,7 +664,7 @@ module.exports = {
             {
                 vars: "all",
                 varsIgnorePattern: "",
-                args: "all",
+                args: "after-used",
                 argsIgnorePattern: "",
                 ignoreRestSiblings: true,
                 caughtErrors: "all",
@@ -768,7 +768,7 @@ module.exports = {
         "no-magic-numbers": [
             "warn",
             {
-                ignore: [0, 1],
+                ignore: [-1, 0, 1],
                 ignoreArrayIndexes: true,
                 enforceConst: true,
                 detectObjects: false,

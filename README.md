@@ -41,3 +41,17 @@ $ npm run docs:serve
 ```bash
 $ npm run docs:lint
 ```
+
+
+License | pptxgenjs
+
+utf-8
+escaping
+
+no semantic line breaking
+please report any slips
+
+This project only required an extremely simple front-end. I though I'd use the opportunity to get a bit of a 
+feeling again of how 
+it is to build a website without any frameworks: not that terrible and quite instructive.
+As a little reward I crowned the website with a Vanilla js badge.

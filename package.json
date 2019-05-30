@@ -2,9 +2,9 @@
     "name": "dragoon",
     "version": "1.0.0",
     "description": "Powerpoint Subtitle Constructor",
-    "main": "src/index.js",
+    "main": "src/backend/index.js",
     "scripts": {
-        "start": "node ./src/index.js",
+        "start": "node src/backend/index.js",
         "fix": "node_modules/.bin/eslint --fix src",
         "docs:lint": "node_modules/.bin/documentation lint src",
         "docs:build": "node_modules/.bin/documentation build src -f html -o docs -c documentation.yml --favicon assets/favicon.png",
@@ -28,6 +28,10 @@
     "engines": {
         "node": ">=10.15.3",
         "npm": ">=6.9.0"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "pptxgenjs": "^2.5.0"
     },
     "devDependencies": {
         "documentation": "^11.0.0",
