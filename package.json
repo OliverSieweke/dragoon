@@ -4,7 +4,7 @@
     "description": "Powerpoint Subtitle Constructor",
     "main": "src/backend/index.js",
     "scripts": {
-        "start": "node src/backend/index.js",
+        "start": "node src/backend/server.js",
         "fix": "node_modules/.bin/eslint --fix src",
         "docs:lint": "node_modules/.bin/documentation lint src",
         "docs:build": "node_modules/.bin/documentation build src -f html -o docs -c documentation.yml --favicon assets/favicon.png",
