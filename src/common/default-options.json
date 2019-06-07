@@ -1,0 +1,36 @@
+{
+    "doubleTranslation": true,
+    "getStructuredText": false,
+    "maxLineLength": 47,
+    "minLineLength": 20,
+    "maxLines": 2,
+    "layout": "LAYOUT_WIDE",
+    "margin": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "x": 0,
+    "y": 0,
+    "w": "100%",
+    "h": "100%",
+    "bkgd": "#000000",
+
+    "color1": "#FFFFFF",
+    "color2": "#FFFFFF",
+    "align1": "center",
+    "align2": "center",
+    "valign1": "top",
+    "valign2": "middle",
+    "bold1": false,
+    "bold2": false,
+    "italic1": false,
+    "italic2": true,
+    "fontFace1": "Helvetica",
+    "fontFace2": "Helvetica",
+    "fontSize1": 41,
+    "fontSize2": 41,
+    "lineSpacing1": 41,
+    "lineSpacing2": 41
+}

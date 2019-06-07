@@ -2,9 +2,12 @@
   <dictionary name="Oli">
     <words>
       <w>bkgd</w>
-      <w>ffffff</w>
+      <w>mimetype</w>
+      <w>multer</w>
+      <w>originalname</w>
       <w>powerpoints</w>
       <w>pptx</w>
+      <w>pptxgenjs</w>
       <w>valign</w>
       <w>webstorm</w>
     </words>

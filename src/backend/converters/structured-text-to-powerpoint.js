@@ -1,43 +1,21 @@
 "use strict";
 
-module.exports = { convertStructuredTextToPowerpoint };
-
-const path = require("path");
-const { readFile } = require("../lib/fsPromises.js");
-const { formatPromiseResult } = require("../lib/formatPromiseResult.js");
 const { harmonizeLineSeparators } = require("../lib/text-formatting-utils.js");
-const { createPowerpoint, createSlide, savePowerpoint } = require("../lib/powerpoint-builder-utils.js");
+const { createPowerpoint, createSlide } = require("../utils/pptxgenjs-utils.js");
 const { SLIDE_SEPARATOR } = require("../settings/parsing-settings.js");
 
+module.exports = { convertStructuredTextToPowerpoint };
 
-/**
- * Converts a structured text file into a powerpoint file (one slide separator marks a new slide, two slide separators mark an empty slide).
- *
- * @param   {string}        relativePath        Relative path to the structured text file (taking /documents/structured-texts as the root)
- * @param   {object}        options             Options object containing option fields as accepted by the PptxGenJs defineSlideMaster() and addText() methods
- *                                                  • https://gitbrent.github.io/PptxGenJS/docs/masters.html
- *                                                  • https://gitbrent.github.io/PptxGenJS/docs/api-text.html
- * @return  {undefined}                         The generated powerpoint is automatically saved to the /documents/powerpoints directory.
- */
-async function convertStructuredTextToPowerpoint(relativePath, options) {
-// I) Read File ------------------------------------------------------------------------------------
-    const absolutePath = path.join(
-        __dirname,
-        "../documents/structured-texts",
-        relativePath,
-    );
-
-    const [err, structuredText] = await formatPromiseResult(
-        readFile(absolutePath, "utf8"),
-    );
-
-    if (err) {
-        console.error(`Error in reading structured text file ${absolutePath}:\n${err.stack}`);
-    }
-
-// II) Extract Slides ------------------------------------------------------------------------------
+// ============================================================================================== \\
+function convertStructuredTextToPowerpoint(filename, originalname, structuredText, options) {
+// I) Extract Slides -------------------------------------------------------------------------------
     const harmonizedStructuredText = harmonizeLineSeparators(structuredText);
+    const firstOrLastEmptySlideMarkerRegexp = new RegExp(
+        `(^${SLIDE_SEPARATOR}${SLIDE_SEPARATOR})|(${SLIDE_SEPARATOR}${SLIDE_SEPARATOR}$)`,
+        "ug",
+    );
     const slideTexts = harmonizedStructuredText
+        .replace(firstOrLastEmptySlideMarkerRegexp, SLIDE_SEPARATOR)// This is to prevent multiple empty slides at the very begin or end
         .split(SLIDE_SEPARATOR)
         .map(slideText => slideText.trim());
 
@@ -45,8 +23,10 @@ async function convertStructuredTextToPowerpoint(relativePath, options) {
     const pptx = createPowerpoint(options);
 
     for (const slideText of slideTexts) {
-        createSlide(pptx, slideText, options);
+        const slideText1 = slideText.match(/.+(?=\n&)/u) && slideText.match(/.+(?=\n&)/u)[0] || slideText;
+        const slideText2 = slideText.match(/(?<=&\n).+/u) && slideText.match(/(?<=&\n).+/u)[0] || "";
+        createSlide(pptx, [slideText1, slideText2], options);
     }
 
-    savePowerpoint(pptx, relativePath.replace(/\.[^/\.]+$/u, ""));
+    return { content: pptx };
 }

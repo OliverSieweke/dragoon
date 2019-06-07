@@ -1,10 +1,8 @@
-"use strict"
+"use strict";
 
-module.exports = {
-    harmonizeLineSeparators,
-}
+module.exports = { harmonizeLineSeparators };
 
 
 function harmonizeLineSeparators(text) {
-    return text.replace(/\r\n|\r/gu, "\n");
+    return text.replace(/\r\n|\r/gu, "\n").trim();
 }

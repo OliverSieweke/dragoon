@@ -55,3 +55,6 @@ This project only required an extremely simple front-end. I though I'd use the o
 feeling again of how 
 it is to build a website without any frameworks: not that terrible and quite instructive.
 As a little reward I crowned the website with a Vanilla js badge.
+
+
+Make little note about old powerpoint versions.

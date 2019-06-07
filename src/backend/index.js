@@ -1,31 +1,13 @@
 "use strict";
 
-const { convertStructuredTextToPowerpoint } = require("./converters/structured-text-to-powerpoint.js");
-const { convertAnnotatedTextToStructuredText } = require("./converters/annotated-text-to-structured-text.js");
-const path = require("path");
-const { readFileSync, writeFileSync } = require("fs");
-const DEFAULT_OPTIONS = require("./settings/default-options.js");
-const { extractSlides } = require("./lib/slide-construction-utils.js");
+const path = require("path")
 
-const options = {};
+const {readFileSync} = require("fs");
+const {extractSlides} = require("./lib/slide-construction-utils.js", )
 
 
-const testText = readFileSync("./documents/plain-texts/tests/test.txt", "utf8");
+const annotatedText = readFileSync(path.join(__dirname, "/documents/annotated-texts/tests/MY_TEST.txt"), "utf8");
 
-// extractSlides(testText, 47, 2);
+const slides = extractSlides(annotatedText)
 
-// convertStructuredTextToPowerpoint(path.join("tests", "test.txt"));
-convertAnnotatedTextToStructuredText(path.join("tests", "testt.txt"), { ...DEFAULT_OPTIONS, ...options });
-
-// const converter = require("office-converter")();
-//
-// converter.generatePdf("./documents/powerpoints/tests/test.pptx", (err, result) => {
-//     // Process result if no error
-//
-//     if (err) {
-//         console.log(err);
-//     }
-//     if (result.status === 0) {
-//         console.log(`Output File located at ${result.outputFile}`);
-//     }
-// });
+console.log(slides.map( slide => [slide.length, slide]))

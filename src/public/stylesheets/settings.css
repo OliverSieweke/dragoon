@@ -1,0 +1,137 @@
+#reset-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding: 3px;
+    background: #934561;
+}
+#reset {
+    flex: 1;
+    background: url("../assets/images/reset.png") center / contain no-repeat;
+    cursor: pointer;
+    border: none;
+}
+#save {
+    border-top: 1px solid black;
+    /*border-left: 1px solid black;*/
+}
+
+#translation1-settings label.hidden {
+    display: none;
+}
+#translation1-settings input.hidden {
+    display: none;
+}
+#translation2-settings label.hidden {
+    display: none;
+}
+#translation2-settings input.hidden {
+    display: none;
+}
+
+#translation1-settings label {
+    font-size: 0.8em;
+}
+#translation2-settings label {
+    font-size: 0.8em;
+}
+
+#translation1.active, #translation2.active {
+    background: darkgray;
+    outline:none;
+}
+
+#translation1:hover, #translation2:hover {
+    cursor: pointer;
+}
+
+#general-settings {
+    font-size: 0.8em;
+}
+
+label.formatting-button{
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+    background: white center / contain no-repeat;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label.bold-label {
+    background-image: url("../assets/images/bold.png");
+}
+label.italic-label {
+    background-image: url("../assets/images/italic.png");
+}
+
+label.left-label {
+    background-image: url("../assets/images/left.png");
+}
+label.center-label {
+    background-image: url("../assets/images/center.png");
+}
+label.right-label {
+    background-image: url("../assets/images/right.png");
+}
+
+label.top-label {
+    background-image: url("../assets/images/top.png");
+}
+label.middle-label {
+    background-image: url("../assets/images/middle.png");
+}
+label.bottom-label {
+    background-image: url("../assets/images/bottom.png");
+}
+
+#translation1-settings :checked + label {
+    background-color: silver;
+}
+#translation2-settings :checked + label {
+    background-color: silver;
+}
+
+input[type="color"] {
+    vertical-align: middle;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+select {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #444;
+    border: 1px solid #AAAAAA;
+    border-radius: .5em;
+}
+
+.bold-italic, .align, .valign {
+    display: inline-block;
+}
+
+.bold-italic {
+    margin-right: 5px;
+}
+
+.align {
+    margin: 0 5px;
+}
+
+.valign {
+    margin-left: 5px;
+}
+
+
+#max-lines {
+    width: 2em;
+}
+

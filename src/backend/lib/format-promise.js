@@ -1,8 +1,8 @@
 "use strict";
 
-module.exports = { formatPromiseResult };
+module.exports = { formatPromise };
 
-async function formatPromiseResult(promise) {
+async function formatPromise(promise) {
     try {
         const result = await promise;
 

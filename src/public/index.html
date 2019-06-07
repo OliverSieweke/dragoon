@@ -3,44 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <title>Dragoon - Subtitle Builder</title>
-    <link href='assets/favicon.png' rel='icon'/>
-    <link href="style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Londrina+Sketch|Londrina+Solid:300&display=swap" rel="stylesheet">
-
+    <link href='assets/images/favicon.png' rel='icon' />
+    <link href="stylesheets/style.css" rel="stylesheet" />
+    <link href="stylesheets/settings.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Sketch|Londrina+Solid:300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="module" src="javascripts/uploader.js"></script>
+    <script type="module" src="javascripts/submit.js"></script>
+    <script type="module" src="javascripts/settings.mjs"></script>
 </head>
 <body>
 <header>
-    <img src="assets/dragoon.png" alt="Dragoon"/>
+    <img src="assets/images/dragoon.png" alt="Dragoon" />
 
     <h1>Dragoon</h1>
     <h2>Subtitle Builder</h2>
-<!--    <div class="title">-->
-<!--    </div>-->
+    <!--    <div class="title">-->
+    <!--    </div>-->
 </header>
 <div id="page">
-<main>
-    <div id="controller">
-        <section id="download">
+    <main>
+        <form id="controller">
+            <section id="upload-test">
+                <input id="file-input-test" type="file" name="subtitles" accept=".txt" />
+                <div id="upload-text-test">
+                    <label id="upload-button-test" for="file-input-test">Choose a file</label>
+                    <span>or drag it here!</span>
+                </div>
+                <div id="file-display-test">
+                    Only .txt files are supported.
+                </div>
+                <label id="get-structured-text-label" for="get-structured-text">
+                    <input id="get-structured-text" name="getStructuredText" type="checkbox" min="0" />
+                    Get Structured Text
+                </label>
+                <div id="upload-error" class="hidden">
+                    <span id="hide-upload-error">&#10005;</span>
+                    <span id="upload-error-message"></span>
+                </div>
+            </section>
+            <section id="settings-test">
+                <button id="translation1" type="button" class="active">Translation 1</button>
+                <button id="translation2" type="button">Translation 2</button>
+                <div id="translation1-settings" class="visible">
+                    <label for="font-face-1" class="hidden">Font Face 1</label>
+                    <select id="font-face-1" name="fontFace1">
+                        <option value="Helvetica">Helvetica</option>
+                    </select>
+                    <label for="color1" class="hidden">Text Color 1</label>
+                    <input id="color1" name="color1" type="color" />
+                    <br>
+                    <div class="bold-italic">
+                        <input id="bold1" name="bold1" type="checkbox" class="hidden">
+                        <label for="bold1" class="bold-label formatting-button"></label>
+                        <input id="italic1" name="italic1" type="checkbox" class="hidden">
+                        <label for="italic1" class="italic-label formatting-button"></label>
+                    </div>
+                    <div class="align">
+                        <input id="left1" name="align1" type="radio" value="left" class="hidden">
+                        <label for="left1" class="left-label formatting-button"></label>
+                        <input id="center1" name="align1" type="radio" value="center" class="hidden">
+                        <label for="center1" class="center-label formatting-button"></label>
+                        <input id="right1" name="align1" type="radio" value="right" class="hidden">
+                        <label for="right1" class="right-label formatting-button"></label>
+                    </div>
+                    <div class="valign">
+                        <input id="top1" name="valign1" type="radio" value="top" class="hidden">
+                        <label for="top1" class="top-label formatting-button"></label>
+                        <input id="middle1" name="valign1" type="radio" value="middle" class="hidden">
+                        <label for="middle1" class="middle-label formatting-button"></label>
+                        <input id="bottom1" name="valign1" type="radio" value="center" class="hidden">
+                        <label for="bottom1" class="bottom-label formatting-button"></label>
+                    </div>
+                    <br>
+                    <label for="font-size1">Font Size:</label>
+                    <input id="font-size1" name="fontSize1" type="number" min="0" max="96" />
 
-        </section>
-        <section id="upload">
+                    <label for="line-spacing1">Line Spacing:</label>
+                    <input id="line-spacing1" name="lineSpacing1" type="number" min="0" max="96" />
+                </div>
+                <div id="translation2-settings" class="hidden">
+                    <label for="font-face-2" class="hidden">Font Face 1</label>
+                    <select id="font-face-2" name="fontFace2">
+                        <option value="Helvetica">Helvetica</option>
+                    </select>
+                    <label for="color2" class="hidden">Text Color 1</label>
+                    <input id="color2" name="color2" type="color" />
+                    <br>
+                    <div class="bold-italic">
+                        <input id="bold2" name="bold2" type="checkbox" class="hidden">
+                        <label for="bold2" class="bold-label formatting-button"></label>
+                        <input id="italic2" name="italic2" type="checkbox" class="hidden">
+                        <label for="italic2" class="italic-label formatting-button"></label>
+                    </div>
+                    <div class="align">
+                        <input id="left2" name="align2" type="radio" value="left" class="hidden">
+                        <label for="left2" class="left-label formatting-button"></label>
+                        <input id="center2" name="align2" type="radio" value="center" class="hidden">
+                        <label for="center2" class="center-label formatting-button"></label>
+                        <input id="right2" name="align2" type="radio" value="right" class="hidden">
+                        <label for="right2" class="right-label formatting-button"></label>
+                    </div>
+                    <div class="valign">
+                        <input id="top2" name="valign2" type="radio" value="top" class="hidden">
+                        <label for="top2" class="top-label formatting-button"></label>
+                        <input id="middle2" name="valign2" type="radio" value="middle" class="hidden">
+                        <label for="middle2" class="middle-label formatting-button"></label>
+                        <input id="bottom2" name="valign2" type="radio" value="center" class="hidden">
+                        <label for="bottom2" class="bottom-label formatting-button"></label>
+                    </div>
+                    <br>
+                    <label for="font-size2">Font Size:</label>
+                    <input id="font-size2" name="fontSize2" type="number" min="0" max="96" />
+                    <label for="line-spacing2">Line Spacing:</label>
+                    <input id="line-spacing2" name="lineSpacing2" type="number" min="0" max="96" />
+                </div>
+                <div id="general-settings">
+                    <label id="bkgd-label" for="bkgd">Background Color:</label>
+                    <input id="bkgd" name="bkgd" type="color" />
+                    <br>
+                    <label id="max-lines-label" for="max-lines">Lines Per Slide:</label>
+                    <input id="max-lines" name="maxLines" type="number" min="0" />
+                </div>
 
-        </section>
-        <section id="settings">
+                <div id="reset-container">
+                    <button id="reset" title="reset" type="button"></button>
+                </div>
+                <button id="save" disabled>Save</button>
+            </section>
+            <button id="submit-test" disabled>Build Powerpoint</button>
+        </form>
+        <!--<form id="form">-->
+        <!--    <section id="upload">-->
+        <!--        <input id="file" type="file" name="file" accept=".txt" />-->
+        <!--        <div id="upload-text">-->
+        <!--            <label id="upload-button" for="file">Choose a file</label>-->
+        <!--            <span>or drag it here!</span>-->
+        <!--        </div>-->
+        <!--        <ul class="hidden" id="file-display-list">-->
+        <!--            Placeholder.txt-->
+        <!--        </ul>-->
+        <!--    </section>-->
+        <!--    <section id="settings">-->
+        <!--        <div>Background</div>-->
+        <!--        <input id="bkgd" name="bkgd" type="color"/>-->
+        <!--        <hr>-->
+        <!--        <div>Text:</div>-->
+        <!--        <input id="color" name="color" type="color"/>-->
+        <!--        <select id="fontFace" name="fontFace">-->
+        <!--            <option value="Helvetica">Helvetica</option>-->
+        <!--        </select>-->
+        <!--        <input type="number" min="0" max="96"/><br>-->
+        <!--        <label id="bold-container" for="bold" ></label>-->
+        <!--        <input id="bold" name="bold" type="checkbox">-->
 
-        </section>
-    </div>
-</main>
-<footer>
-    <img id="vanilla-js" src="assets/vanilla-js.png" alt="Vanilla JS"/>
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Help!</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-</footer>
+        <!--        <input id="italic" name="italic" type="checkbox">-->
+        <!--        <label id="italic-container" for="italic" ></label>-->
+
+        <!--        <input id="left" name="align" type="radio" value="left"/>-->
+        <!--        <label id="left-container" for="left" ></label>-->
+
+        <!--        <input id="center" name="align" type="radio" value="center">-->
+        <!--        <label id="center-container" for="center" ></label>-->
+
+        <!--        <input id="right" name="align" type="radio" value="right">-->
+        <!--        <label id="right-container" for="right" ></label>-->
+
+        <!--        <button id="reset"></button>-->
+        <!--    </section>-->
+        <!--    <input id="submit" type="submit" value="Build Powerpoint" disabled>-->
+        <!--</form>-->
+
+        <!--<div id="controller">-->
+        <!--    <section id="download">-->
+
+        <!--    </section>-->
+
+        <!--    <section id="upload">-->
+        <!--        <form id="upload-form" enctype="multipart/form-data">-->
+        <!--            <input id="file" type="file" name="files" />-->
+        <!--            <label for="file"><strong>Choose a file</strong>or drag it here.</label>-->
+
+        <!--        </form>-->
+
+
+        <!--<form name="myForm" action="" enctype="multipart/form-data">-->
+        <!--        <input id="file" type="file" name="files" />-->
+
+        <!--    <button id="submit" name="hey">Submit</button>-->
+        <!--<input id="file" type="file" name="file" />-->
+        <!--    <input type="text" name="test" />-->
+        <!--                    <button name="foo" value="Submit">Convert</button>-->
+        <!--</form>-->
+
+        <!--    </section>-->
+        <!--    <section id="settings">-->
+
+        <!--    </section>-->
+        <!--</div>-->
+    </main>
+    <footer>
+        <img id="vanilla-js" src="assets/images/vanilla-js.png" alt="Vanilla JS" />
+        <nav>
+            <ul id="navigation-list">
+                <li>About</li>
+                <li>Help!</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </footer>
 </div>
 </body>
 </html>
