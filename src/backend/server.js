@@ -5,8 +5,9 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const subtitles = require("./routes/subtitles.js");
+const {port: devPort} = require("./configs.json")
 
-const { port } = require("./configs.json");
+const port = process.env.port || devPort;
 
 // =========================================== Routes =========================================== \\
 app.use(express.static(path.join(__dirname, "../public")));
