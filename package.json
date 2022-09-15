@@ -36,7 +36,7 @@
         "pptxgenjs": "^2.5.0"
     },
     "devDependencies": {
-        "documentation": "^11.0.0",
+        "documentation": "^14.0.0",
         "eslint": "^5.16.0",
         "eslint-plugin-jsdoc": "^7.0.2"
     }
