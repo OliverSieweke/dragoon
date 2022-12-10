@@ -30,7 +30,7 @@
         "npm": ">=6.9.0"
     },
     "dependencies": {
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "express-zip": "^2.0.1",
         "multer": "^1.4.1",
         "pptxgenjs": "^2.5.0"
